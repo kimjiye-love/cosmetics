@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kora Ogarnics Sub1</title>
+    <meta name="viewport" content="width=divece-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/100e6fddd4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    
+<script>
+$(document).ready(function() {
+        $(".sub").hide();
+         $(".menu").on({
+             mouseenter:function(){
+               var i=$(this).index();
+            $(".sub").eq(i).stop().slideDown();
+             },
+              mouseleave:function(){
+               var i=$(this).index();
+                 $(".sub").stop().slideUp();
+             }
+         });
+          
+            $(".hamberger_menu").click(function(){
+                $("#m_bg_menu").css("display","block");
+                $("#m_bg_menu").stop().animate({left:"20%"},500)
+            });
+            $(".m_close").click(function(){
+                $("#m_bg_menu").stop().animate({left:"100%"},500)
+            });
+           
+            $(".m_btn_menu>ul>li").click(function(){
+               $(this).find(".m_sub").stop().slideToggle(); 
+            });
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div id="logo">
+            <h1>
+                <a href="index_main.html">
+                    <img src="img/logo.png" alt="로고">
+                </a>
+            </h1>
+        </div>
+
+        <div class="topMenu">
+                <a href="#">로그인</a> | <a href="join.html">회원가입</a>
+        </div>
+        <div id="menu">
+            <div class="btnMenu">
+                <ul class="first">
+                    <li class="menu"><a href="#">BRAND</a>
+                        <ul class="sub">
+                        <li><a href="index_sub1.html">브랜드 소개</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">SHOP</a>
+                        <ul class="sub">
+                        <li><a href="index_sub2.html">상품</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">EVENT</a>
+                        <ul class="sub">
+                        <li><a href="index_sub3.html">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">COMMMUNITY</a>
+                        <ul class="sub">
+                        <li><a href="index_sub4.html">공지사항</a></li>
+                        </ul>
+                    </li>
+                        <li class="menu"><a href="#">STORE</a>
+                        <ul class="sub">
+                        <li><a href="index_sub5.html">매장</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="m_menu">
+            <div class="hamberger_menu">
+                <img src="img/hamburger_menu.png" alt="모바일메뉴">
+            </div>
+        <div id="m_bg_menu">
+                <div class="m_t_menu">
+                    <a href="#">로그인</a> | <a href="join.html">회원가입</a>
+                </div>
+                <div class="m_btn_menu">
+                 <ul>
+                    <li><a href="#">BRAND</a>
+                        <ul class="m_sub">
+                        <li><li><a href="index_sub1.html">브랜드 소개</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SHOP</a>
+                        <ul class="m_sub">
+                        <li><li><a href="index_sub2.html">상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">EVENT</a>
+                        <ul class="m_sub">
+                        <li><li><a href="index_sub3.html">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">COMMMUNITY</a>
+                        <ul class="m_sub">
+                        <li><li><a href="index_sub4.html">공지사항</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">STORE</a>
+                        <ul class="m_sub">
+                        <li><li><a href="index_sub5.html">매장</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               </div>
+               <div class="m_close">
+                    <span>X</span>
+                </div>
+        </div>
+        </div>
+    </nav>
+    <div id="menuBar"></div>
+</header>
+
+<div id="wrap">
+   
+    <div id="sub_header">
+        <h1>BRAND</h1>
+        <P>내피부는 made in nature, 코라오가닉스를 소개합니다.</P>
+    </div>
+       
+    <div id="sub1_content1">
+         <img src="img2/content1.png" class="sub1_content1_img" alt="서브1이미지1">
+         <div class="logo">
+             <div id="logopadding">
+                  <div id="linetext">
+                     <img src="img/logo.png" >
+                  </div>
+                  <p class="text1">사람들의 마음에 긍정적인 확신과 자기를 사랑하는 마음을 전합니다.</p>  
+             </div>   
+        </div>
+    </div>
+    
+  <div id="sub1_content2">
+      <div class="text2">
+          <h2>항산화 효과를 지닌 노니를<br>
+           원료로 한 유기농 자연주의<br> 
+           화장품 , 코라오닉가닉스</h2>
+          <p>미란다 커는 13살부터 노니를 먹으며,<br>
+          그녀의 건강함과 활력의 요인이 노니인 것을 깨달았습니다.<br>
+          그러한 이유로 코라오가닉스 모든 제품에는 노니 추출물을<br>
+           담았습니다.</p>
+      </div>
+      <div id="sub1_content2_img">
+          <img src="img2/content2.png" alt="서브1이미지2">
+      </div> 
+  </div>
+  
+  <div id="sub1_content3">
+      <div id="sub1_content3_inner">
+           <div class="sub1_content3_img">
+                <img src="img2/content3.png" alt="서브1이미지3">
+           </div>
+            <div id="text_text">
+                <div id="text3_1">
+                <h2>[노니의 스킨케어]</h2>
+                <p>많은 양의 비타민A와 C 외에도 100가지가 <br>넘는 
+                비타민과 미네랄이 있어 강력한 항산화 효과를 가지고 
+                있습니다.</p></div>
+                <div id="text3_2">
+                <h2>[로즈쿼츠의 에너지]</h2>
+                <p>마음의 안정을 주는 에너지를 가진 <br>크리스탈로
+                 모두를 사랑하고 이해하는 마음을 선물합니다.</p></div>
+           </div>
+      </div>
+ </div>
+   
+   <div id="sub1_content4">
+     <div id="sub1_content4_center">
+         <div id="sub1_content4_img">
+              <img src="img2/content4.png" alt="서브1이미지4">
+         </div>
+          <div class="text4">
+             <h2> Cruelty-free</h2>
+             <p>코라오가닉스의 제품은 동물실험을 하지 않은<br>
+              크루얼티 프리 화장품입니다.<br>
+              또한 동물성원료를 사용하지 않은 비건 화장품입니다. </p>
+          </div>
+    </div>
+   </div>
+  </div>
+     
+<div id="footer">
+   <div id="inner">
+    <div id="footer_top" >
+      <div id="footer_logo"><img src="img/logo2.png" alt="footerlogo"></div>
+       <div class="footerMenu">
+					<ul class="footerMenuul">
+						<li>
+                            <a href="index_sub1.html">BRAND</a>
+						</li>
+                        <li>
+                           <a href="index_sub2.html">SHOP</a>
+						</li>
+                        <li>
+                            <a href="index_sub3.html">EVENT</a>
+						</li>
+                        <li>
+                            <a href="index_sub4.html">COMMUNITY</a>
+						</li>
+                        <li>
+                           <a href="index_sub5.html">STORE</a>
+						</li>
+					</ul>
+        </div>
+    </div>
+    
+    <div id="footer_center">
+            <ul class="footer_centerul clear">
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">E-mail무단수집거부</a></li>
+                    <li><a href="#">Contant us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+            </ul>
+    </div>
+    
+    <div id="footerimg">
+       <img src="img/logo2.png" alt="footerlogo" >
+        <div class="footerimgstore"><i class="fas fa-map-marker-alt"></i><p>store</p></div>
+        <div class="footerimgcener"><i class="fas fa-exclamation-circle"></i><p>center</p></div>
+        <div class="footerimgproduct"><i class="fas fa-lightbulb"></i><p>product</p></div>
+    </div>
+    <div id="footer_bottom">
+        <p>상호:주식회사  그리티 대표:문영우</p>
+        <p>사업자등록번호 : 109-81-59281 [사업자정보확인] 통신판매업신고번호 : 강남5526호 전화 : 1661-7123</p>
+        <p>주소 : 서울시 강남구 연주로 151길 7 주성빌딩 3층 </p>
+        <p>(c)KORA all rights reserved. designed by WISA.</p>
+    </div>
+  </div>
+</div> 
+
+
+</body>
+</html>

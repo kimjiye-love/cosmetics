@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>Kora Ogarnics Sub2</title>
+    <meta name="viewport" content="width=divece-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/100e6fddd4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    
+    <script>
+$(document).ready(function() {
+        $(".sub").hide();
+         $(".menu").on({
+             mouseenter:function(){
+               var i=$(this).index();
+            $(".sub").eq(i).stop().slideDown();
+             },
+              mouseleave:function(){
+               var i=$(this).index();
+                 $(".sub").stop().slideUp();
+             }
+         });
+          
+            $(".hamberger_menu").click(function(){
+                $("#m_bg_menu").css("display","block");
+                $("#m_bg_menu").stop().animate({left:"20%"},500)
+            });
+            $(".m_close").click(function(){
+                $("#m_bg_menu").stop().animate({left:"100%"},500)
+            });
+           
+            $(".m_btn_menu>ul>li").click(function(){
+               $(this).find(".m_sub").stop().slideToggle(); 
+            });
+});
+    </script>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div id="logo">
+            <h1>
+                <a href="index_main.html">
+                    <img src="img/logo.png" alt="로고">
+                </a>
+            </h1>
+        </div>
+<!--        PC메뉴-->
+        <div class="topMenu">
+                <a href="#">로그인</a> | <a href="join.html">회원가입</a>
+        </div>
+        <div id="menu">
+            <div class="btnMenu">
+                <ul class="first">
+                    <li class="menu"><a href="#">BRAND</a>
+                        <ul class="sub">
+                        <li><a href="index_sub1.html">브랜드 소개</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">SHOP</a>
+                        <ul class="sub">
+                        <li><a href="index_sub2.html">상품</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">EVENT</a>
+                        <ul class="sub">
+                        <li><a href="index_sub3.html">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="#">COMMMUNITY</a>
+                        <ul class="sub">
+                        <li><a href="index_sub4.html">공지사항</a></li>
+                        </ul>
+                    </li>
+                        <li class="menu"><a href="#">STORE</a>
+                        <ul class="sub">
+                        <li><a href="index_sub5.html">매장</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!--        모마일메뉴-->
+        <div id="m_menu">
+            <div class="hamberger_menu">
+                <img src="img/hamburger_menu.png" alt="모바일메뉴">
+            </div>
+        <div id="m_bg_menu">
+                <div class="m_t_menu">
+                    <a href="#">로그인</a> | <a href="join.html">회원가입</a>
+                </div>
+                <div class="m_btn_menu">
+                 <ul>
+                    <li><a href="#">BRAND</a>
+                        <ul class="m_sub">
+                        <li><li><a href="index_sub1.html">브랜드 소개</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SHOP</a>
+                        <ul class="m_sub">
+                        <li><li><a href="index_sub2.html">상품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">EVENT</a>
+                        <ul class="m_sub">
+                        <li><li><a href="index_sub3.html">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">COMMMUNITY</a>
+                        <ul class="m_sub">
+                        <li><li><a href="index_sub4.html">공지사항</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">STORE</a>
+                        <ul class="m_sub">
+                        <li><li><a href="index_sub5.html">매장</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               </div>
+               <div class="m_close">
+                    <span>X</span>
+                </div>
+        </div>
+        </div>
+    </nav>
+    <div id="menuBar"></div>
+</header>
+
+<div id="wrap">    
+    <div id="sub_header">
+        <h1>PRODUCT</h1>
+        <P>코라오가닉의 상품을 소개합니다.</P>
+    </div>
+
+    
+    <div id="container"> 
+        <ul class="container">
+            <li class="box" style="width: 460px">
+                  <div class="box_img"><a href="#"><img src="img3/product1.gif" alt="product1" style="width:300px"></a>
+                  </div>
+                  <div class="buytext">
+                       <p>made in kora ogarnics</p>
+                       <p>Noni Bright Vitamine C serum</p>
+                       <p><a href="#">노니 브라이트 비타민C세럼 30ml (AU-KF26)</a></p>
+                       <p>피부에 화사하고 밝은 빛을 선사해줄 강력한 <br>
+                       유기농 비타민C의힘</p>
+                        <p>79,000 원</p>
+                   <a href="#" class="buy"><img src="img3/productbuy.png"><p>구매하기</p></a>  
+               </div>
+           
+             </li>
+           <li class="box" style="width: 460px">
+                  <div class="box_img"><a href="#"><img src="img3/product2.gif" alt="product2" style="width:300px"></a>
+                  </div>
+                  <div class="buytext">
+                       <p>made in kora ogarnic</p>
+                       <p>Balancing Rose Mist</p>
+                       <p><a href="#">밸런싱 로즈 미스트 100ml</a></p>
+                       <p>속까지 꽉 채우는 수분 충전 에너지</p>
+                       <p>38,000원</p>
+                   <a href="#" class="buy"><img src="img3/productbuy.png"><p>구매하기</p></a>  
+                  </div>
+           </li>
+           <li class="box" style="width: 460px">
+           <div class="box_img"><a href="#"><img src="img3/product3.gif"alt="product3" style="width:300px"></a>
+           </div>
+                <div class="buytext">
+                       <p>made in kora ogarnics</p>
+                       <p>Noni Bright Vitamine C serum</p>
+                       <p><a href="#">노니 브라이트 비타민C세럼 30ml (AU-KF26)</a></p>
+                       <p>피부에 화사하고 밝은 빛을 선사해줄 강력한 <br>
+                       유기농 비타민C의힘</p>
+                       <p>38,000원</p>
+                <a href="#" class="buy"><img src="img3/productbuy.png"><p>구매하기</p></a>  
+                </div> 
+          </li>
+          <li class="box" style="width: 460px">
+           <div class="box_img"><a href="#"><img src="img3/product4.gif" alt="product4" style="width:300px"></a>
+           </div>
+                <div class="buytext">
+                    <p>made in kora ogarnics</p>
+                    <p>Foarming Cleanser</p>
+                    <p><a href="#">포밍 클렌저 100ml</a> </p>
+                    <p>상쾌한 피부를 만드는 클렌징 습관의 시작</p>
+                    <p>35,000 원</p>
+                <a href="#" class="buy"><img src="img3/productbuy.png"><p>구매하기</p></a>  
+                </div>
+          </li>
+           <li class="box" style="width: 460px">
+             <div class="box_img"><a href="#"><img src="img3/product5.gif" alt="product5" style="width:300px"></a>
+             </div>
+                   <div class="buytext">
+                   <p>made in kora ogarnics</p>
+                   <p><a href="#">[Limited Edition] 매직 마스크 듀오(MMD2019)</a></p>
+                   <p>포밍 클렌저 100ml </p>
+                   <p>상미란다 커의 피부관리의 시작,<br>
+                    매끈하고 쫀쫀한 피부탄력을 채워주는 마스크 패키지</p>
+                    <p>39,000원</p>
+                    <a href="#" class="buy"><img src="img3/productbuy.png"><p>구매하기</p></a>  
+                   </div>    
+           </li>
+     </ul>
+  </div>
+</div>
+          
+<div id="footer">
+   <div id="inner">
+    <div id="footer_top" >
+      <div id="footer_logo"><img src="img/logo2.png" alt="footerlogo"></div>
+       <div class="footerMenu">
+					<ul class="footerMenuul">
+						<li>
+                            <a href="index_sub1.html">BRAND</a>
+						</li>
+                        <li>
+                           <a href="index_sub2.html">SHOP</a>
+						</li>
+                        <li>
+                            <a href="index_sub3.html">EVENT</a>
+						</li>
+                        <li>
+                            <a href="index_sub4.html">COMMUNITY</a>
+						</li>
+                        <li>
+                           <a href="index_sub5.html">STORE</a>
+						</li>
+					</ul>
+        </div>
+    </div>
+    
+    <div id="footer_center">
+            <ul class="footer_centerul clear">
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">E-mail무단수집거부</a></li>
+                    <li><a href="#">Contant us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+            </ul>
+    </div>
+    
+    <div id="footerimg">
+       <img src="img/logo2.png" alt="footerlogo" >
+        <div class="footerimgstore"><i class="fas fa-map-marker-alt"></i><p>store</p></div>
+        <div class="footerimgcener"><i class="fas fa-exclamation-circle"></i><p>center</p></div>
+        <div class="footerimgproduct"><i class="fas fa-lightbulb"></i><p>product</p></div>
+    </div>
+    <div id="footer_bottom">
+        <p>상호:주식회사  그리티 대표:문영우</p>
+        <p>사업자등록번호 : 109-81-59281 [사업자정보확인] 통신판매업신고번호 : 강남5526호 전화 : 1661-7123</p>
+        <p>주소 : 서울시 강남구 연주로 151길 7 주성빌딩 3층 </p>
+        <p>(c)KORA all rights reserved. designed by WISA.</p>
+    </div>
+  </div>
+</div> 
+
+
+</body>
+</html>
